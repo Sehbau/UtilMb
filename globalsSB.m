@@ -3,7 +3,7 @@
 % 
 % dirXXX    relative path
 % pthXXX    absolute (full) path
-% fipaXXX   file path: fullpath|relpath + filename 
+% fipaXXX   file path: fullpath | relpath + filename 
 %
 % sa cc_Globals.m
 %
@@ -20,6 +20,7 @@ addpath( genpath( [rootSehBau 'UtilMb'] ) );
 %% ------   Dirs to Programs (and Demos)   ------
 DirProg.descExtr = 'DescExtr/';
 DirProg.mtchVec  = 'MtchVec/';
+DirProg.mtchHst  = 'MtchHst/';
 DirProg.focExtr  = 'FocExtr/';
 DirProg.plcRec   = 'DemoPlcRec/';
 
@@ -38,6 +39,7 @@ end
 FipaExe.dscx   = [ PthProg.descExtr 'dscx' ];
 FipaExe.mvec1  = [ PthProg.mtchVec  'mvec1' ];
 FipaExe.mvecL  = [ PthProg.mtchVec  'mvecL' ];
+FipaExe.mhstL  = [ PthProg.mtchHst  'mhstL' ];
 FipaExe.focxv1 = [ PthProg.focExtr  'focxv1' ];
 FipaExe.focxh1 = [ PthProg.focExtr  'focxh1' ];
 FipaExe.focxhL = [ PthProg.focExtr  'focxhL' ];
@@ -57,6 +59,9 @@ addpath( genpath( [ PthProg.descExtr 'UtilMb/' ] ) );
 
 addpath( PthProg.mtchVec );
 addpath( genpath( [ PthProg.mtchVec 'UtilMb/' ] ) );
+
+addpath( PthProg.mtchHst );
+addpath( genpath( [ PthProg.mtchHst 'UtilMb/' ] ) );
 
 addpath( PthProg.focExtr );
 addpath( genpath( [ PthProg.focExtr 'UtilMb/' ] ) );

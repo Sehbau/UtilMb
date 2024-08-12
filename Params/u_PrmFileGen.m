@@ -1,7 +1,13 @@
 % 
-% Concatenates, path and filestem
+% Generates parameter filepath.
 %
 % ai {plcrec}Run.m, ie. lvngRun.m
+%
+% IN   typ          filename of parameter file
+%      pthPrmFile   directory of parameter file
+%      kind         'Mtch' or 'Dscx' ?
+%
+% USE   Args.prmFileMtc = u_PrmFileGen( prmMtcTyp, pthPrmFile, 'Mtch', 1 );
 %
 function fina = u_PrmFileGen( typ, pthPrmFile, kind, bInclDirProg )
 
